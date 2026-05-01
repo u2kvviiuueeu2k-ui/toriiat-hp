@@ -81,23 +81,23 @@ export default function Home() {
       <nav className="nav-bar glass">
         <div className="container nav-content">
           <div className="text-2xl font-ja tracking-widest amber-glow">ToriiAt</div>
-          <div className="flex items-center gap-10">
+          <div className="flex items-center">
             <div className="nav-links space-x-8 text-sm uppercase tracking-widest opacity-80">
               <a href="#about" className="hover:text-accent-amber">{t.nav.about}</a>
               <a href="#menu" className="hover:text-accent-amber">{t.nav.menu}</a>
               <a href="#gallery" className="hover:text-accent-amber">{t.nav.gallery}</a>
               <a href="#contact" className="hover:text-accent-amber">{t.nav.contact}</a>
             </div>
+            
             {/* Language Switcher */}
-            <div className="flex gap-2 text-[10px] tracking-widest font-bold">
+            <div className="lang-switcher">
               <button 
                 onClick={() => setLang("ja")} 
-                className={`cursor-pointer ${lang === "ja" ? "text-accent-amber" : "opacity-30"}`}
+                className={`lang-btn ${lang === "ja" ? "active" : "opacity-30"}`}
               >JP</button>
-              <span className="opacity-20">/</span>
               <button 
                 onClick={() => setLang("en")} 
-                className={`cursor-pointer ${lang === "en" ? "text-accent-amber" : "opacity-30"}`}
+                className={`lang-btn ${lang === "en" ? "active" : "opacity-30"}`}
               >EN</button>
             </div>
           </div>
