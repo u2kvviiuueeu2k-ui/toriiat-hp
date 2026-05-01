@@ -34,6 +34,7 @@ export default function Home() {
           <div className="nav-links space-x-8 text-sm uppercase tracking-widest opacity-80">
             <a href="#about" className="hover:text-accent-amber">About</a>
             <a href="#menu" className="hover:text-accent-amber">Menu</a>
+            <a href="#gallery" className="hover:text-accent-amber">Gallery</a>
             <a href="#contact" className="hover:text-accent-amber">Contact</a>
           </div>
         </div>
@@ -49,7 +50,7 @@ export default function Home() {
             className="object-cover opacity-50"
             priority
           />
-          <div className="absolute inset-0 bg-black-50"></div>
+          <div className="absolute inset-0 bg-black-fade"></div>
           <div className="absolute inset-0 bg-gradient-hero"></div>
           <div className="absolute inset-0 bg-radial-overlay"></div>
         </div>
@@ -114,6 +115,25 @@ export default function Home() {
               </div>
             ))}
           </div>
+        </div>
+      </section>
+
+      {/* Gallery Section */}
+      <section id="gallery" className="section-padding container">
+        <div className="text-center mb-24 animate-up">
+          <h2 className="text-5xl mb-4 font-ja">Latest Encounters</h2>
+          <p className="text-secondary tracking-[0.2em] uppercase">Moments in Amber</p>
+        </div>
+        
+        <div className="gallery-grid">
+          {[1, 2, 3, 4, 5, 6].map((num) => (
+            <div key={num} className="gallery-item glass animate-up" style={{ animationDelay: `${num * 0.1}s` }}>
+              <Image src={`/g${num}.png`} alt={`Moment ${num}`} fill />
+              <div className="gallery-overlay">
+                <span className="text-xs tracking-widest uppercase text-white font-bold">View Detail</span>
+              </div>
+            </div>
+          ))}
         </div>
       </section>
 
