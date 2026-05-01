@@ -13,8 +13,8 @@ const shippori = Shippori_Mincho_B1({
 });
 
 export const metadata = {
-  title: "TORIIAT Daikanyama | 琥珀色の出会い、代官山の隠れ家バー",
-  description: "代官山に佇む、酒と人との出会いを大切にするバー「TORIIAT（トリアット）」。琥珀色の光に包まれた上質な空間で、心に残るひとときを。",
+  title: "ToriiAt Daikanyama | The Encounter Bar",
+  description: "代官山の路地裏に佇む、人との出会いを大切にするコミュニティ・バー「ToriiAt（トリイアト）」。琥珀色の光と上質な酒に包まれる至福のひとときを。",
 };
 
 export default function RootLayout({ children }) {
