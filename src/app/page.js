@@ -53,8 +53,8 @@ export default function Home() {
         </div>
         
         <div className="relative z-10 text-center animate-up">
-          <h1 className="hero-title text-8xl md:text-9xl mb-6 text-gradient font-ja tracking-tighter">TORIIAT</h1>
-          <p className="text-xl md:text-2xl tracking-[0.4em] text-secondary uppercase">Daikanyama Encounter</p>
+          <h1 className="hero-title text-9xl mb-6 text-gradient font-ja tracking-tighter">TORIIAT</h1>
+          <p className="text-2xl tracking-[0.4em] text-secondary uppercase">Daikanyama Encounter</p>
           <div className="mt-12">
             <a href="#menu" className="btn-premium">Explore Menu</a>
           </div>
@@ -64,8 +64,8 @@ export default function Home() {
       {/* About Section */}
       <section id="about" className="section-padding">
         <div className="container">
-          <div className="grid-2col grid md:grid-cols-2 gap-20 items-center">
-            <div className="animate-up">
+          <div className="grid-2col flex gap-20 items-center">
+            <div className="animate-up" style={{ flex: 1 }}>
               <span className="text-accent-amber tracking-widest text-sm uppercase mb-4 block">Concept</span>
               <h2 className="text-5xl mb-10 font-ja leading-tight">酒と人が交差する、<br />代官山の隠れ家。</h2>
               <div className="text-secondary space-y-6 text-lg leading-relaxed">
@@ -79,7 +79,7 @@ export default function Home() {
                 </p>
               </div>
             </div>
-            <div className="relative aspect-[4/5] rounded-2xl overflow-hidden glass animate-up" style={{ animationDelay: '0.2s' }}>
+            <div className="relative rounded-2xl overflow-hidden glass animate-up" style={{ flex: 1, aspectRatio: '4/5', animationDelay: '0.2s' }}>
               <Image src="/mockup.png" alt="Bar Vibe" fill className="object-cover opacity-90 hover:scale-110 transition duration-700" />
             </div>
           </div>
