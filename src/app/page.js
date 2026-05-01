@@ -49,11 +49,13 @@ export default function Home() {
             className="object-cover opacity-50"
             priority
           />
-          <div className="absolute inset-0 bg-gradient-to-b from-black/60 via-transparent to-[#050505]"></div>
+          <div className="absolute inset-0 bg-black-50"></div>
+          <div className="absolute inset-0 bg-gradient-hero"></div>
+          <div className="absolute inset-0 bg-radial-overlay"></div>
         </div>
         
         <div className="relative z-10 text-center animate-up">
-          <h1 className="hero-title text-9xl mb-6 text-gradient font-ja tracking-tighter">TORIIAT</h1>
+          <h1 className="hero-title text-9xl mb-6 amber-glow font-ja tracking-tighter">TORIIAT</h1>
           <p className="text-2xl tracking-[0.4em] text-secondary uppercase">Daikanyama Encounter</p>
           <div className="mt-12">
             <a href="#menu" className="btn-premium">Explore Menu</a>
