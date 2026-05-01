@@ -124,7 +124,7 @@ export default function Home() {
           </div>
           
           <div className="flex flex-col md:flex-row justify-center items-center gap-10 mb-20">
-            <a href="#" className="btn-premium">Instagram DM</a>
+            <a href="https://www.instagram.com/toriiat_daikanyama/" target="_blank" rel="noopener noreferrer" className="btn-premium">Instagram DM</a>
             <a href="#" className="btn-premium">Tabelog Booking</a>
           </div>
           
