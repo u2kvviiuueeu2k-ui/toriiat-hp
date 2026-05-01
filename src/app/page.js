@@ -107,10 +107,6 @@ export default function Home() {
           <p className="mt-20 text-xs text-white/20">© 2026 TORIIAT DAIKANYAMA. Managed by Alnair LLC.</p>
         </div>
       </footer>
-
-      <style jsx global>{`
-        .amber-glow { text-shadow: 0 0 20px rgba(255, 159, 28, 0.4); }
-      `}</style>
     </main>
   );
 }
